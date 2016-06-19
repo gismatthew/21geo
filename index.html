@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>21st Centuray Geomatics Solutions Ltd.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="21st Centuray Geomatics Solutions Ltd.">
+    <meta name="author" content="21st Geo">
+    
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-glyphicons.css" rel="stylesheet">
+
+    <link href="css/global.css" rel="stylesheet" media="screen">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/logo_v2tiny.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/logo_v2tiny.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/logo_v2tiny.png">
+    <link rel="apple-touch-icon-precomposed" href="img/logo_v2tiny.png">
+   <link rel="shortcut icon" href="img/logo_v2tiny.png">
+  </head>
+  <body>
+    
+    <header>
+      <div class="container">
+        <div id="logo" class="pull-left"><img src="img/logo_v2tiny.png"></img></div>
+        <div id="title">21<sup>st</sup> Century Geomatics Solutions Ltd.</div>
+        <div id="shortcuts" class="pull-right">
+            <div id="homepage">
+              <ul>
+                <li><a href="#" class="active">English</a></li>
+                <li><a href="#">中文</a></li>
+                <li><a href="#">Français</a></li>
+              </ul>
+            </div>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search for...">
+              <span class="input-group-btn">
+                <button class="btn btn-default btn-small" type="button">Go!</button>
+              </span>
+            </div><!-- /input-group -->
+            <!-- <div id="site-search" class="input-group">
+              <input type="text" placeholder="Search..." class="form-control">
+              <button class="btn btn-secondary">GO</button>
+            </div> -->
+        </div>
+      </div>
+    </header>
+    
+    <!-- NAVBAR ================================================== -->
+    <div class="navbar-wrapper">
+      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+      <div class="container">
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class = "header-logo">
+              <img src="img/logo_v2tiny.png" width="32"></img>
+              <div style="font-size: 20px; line-height:40px" id="title">21<sup>st</sup> Century Geomatics Solutions Ltd.</div>
+            </div>
+            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li class="~active"><a href="#section-about-us">About Us</a></li>
+                <!-- Read about Bootstrap dropdowns at http://twbs.github.com/bootstrap/javascript.html#dropdowns -->
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#section-services">GIS</a></li>
+                    <li><a href="#section-services">RS</a></li>
+                    <li><a href="#section-services">GPS</a></li>
+                  </ul>
+                </li>
+
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#section-products">GIS for scheduling</a></li>
+                    <li><a href="#section-products">21<sup>st</sup>WebGIS</a></li>
+                  </ul>
+                </li>
+                <li><a href="#section-contact-us">Contact Us</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
+
+      </div> <!-- /.container -->
+    </div><!-- /.navbar-wrapper -->
+
+    <!-- Carousel
+    ================================================== -->
+    <div class="container">
+      <div id="myCarousel" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="img/slides/slide-01.png" alt="">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Saskatoon Service Hub</h1>
+                <p class="lead">Short description for Saskatoon Service Hub goes here...</p>
+                <a class="btn btn-medium btn-info btn-secondary" href="#">View Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/slides/slide-02.jpg" alt="">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Another example headline.</h1>
+                <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                <a class="btn btn-medium btn-info btn-secondary" href="#">Learn more</a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/slides/slide-03.jpg" alt="">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>One more for good measure.</h1>
+                <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                <a class="btn btn-medium btn-info" href="#">Browse gallery</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+      </div><!-- /.carousel -->
+    </div>
+    <div class="contents">
+    <div class="container about-us">
+      <h2 id="section-about-us">About Us</h2>
+      <p class="lead">21<sup>st</sup> Century Geomatics (21<sup>st</sup> Geo) has been providing remote sensing data and GIS-customized services to industry clients in western Canada.  21<sup>st</sup> Geo is a privately owned Canadian corporation in business since 2012.  Working primarily with up-to-date satellite imagery, we provide expert advice, appropriate data, and program solutions for terrestrial mapping and monitoring in renewable and non-renewable resource sectors. Utilizing advanced optimization algorithms, we help our users to optimize business resource planning to do more business with less resources.</p>
+    </div>
+    <hr>
+    <div class="container services">
+
+      <!-- services 3colums -->
+      <h2 id="section-services">Services</h2>
+      <div class="row">
+        <div class="span4">
+          <img class="img-circle" src="img/bullet1-1.png">
+          <h3>GIS Service</h3>
+          <p>21<sup>st</sup> Century Geomatics specializes in creating rich and easy-to-use mapping applications for companies, government agencies, and non-profit organizations of all sizes. 21<sup>st</sup> Century Geomatics delivers software solutions that allow clients to efficiently accomplish tasks with increased precision in their workflow, while at the same time reducing time and cost. Complementing this development expertise, our team has over 20 years’ experience in digital mapping and database management, ensuring an in-depth knowledge of the relevant technical issues that is second to none. Our goal, through custom GIS application development, is to provide our clients with the tools they need to not only improve their business, but also enhance the end-users experience by providing the spatial information necessary to quickly make well-informed decisions. </p>
+          <p><a class="btn" href="#">View details &raquo;</a></p>
+        </div><!-- /.span4 -->
+        <div class="span4">
+          <img class="img-circle" src="img/bullet1-3.png">
+          <h3>RS Service</h3>
+          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn" href="#">View details &raquo;</a></p>
+        </div><!-- /.span4 -->
+        <div class="span4">
+          <img class="img-circle" src="img/bullet1-2.png">
+          <h3>GPS Service</h3>
+          <p>The key of any GIS system is the spatial data upon which the display and query operations rely. Acquisition of this data can be completed using a variety of different sources and methodologies. 21st Century Geomatics maintains state-of-the-art GPS data collection equipment capable of sub-meter accuracy survey needs. <img src="img/road-survey.jpg" class="pull-right"></img> We had ArcGIS, QGIS, PCI, AutoCAD software and Geodatabase maintenance expertise allowing us to utilize advance digitizing techniques in essentially any environment using any map data format.</p>
+          <p><a class="btn" href="#">View details &raquo;</a></p>
+        </div><!-- /.span4 -->
+      </div><!-- /.row -->
+    </div><!-- /.container.services -->
+
+    <hr>
+
+    <div class="container product">
+      <!-- product 3colums -->
+      <h2 id="section-products">Products</h2>
+      <div class="row">
+        <div class="span6">
+          <img class="img-circle" src="img/bullet1-4.png">
+          <h3>Scheduling</h3>
+          <p>Every organization faces scheduling puzzles: assign a limited set of constrained resources (employees, assets, time and money) to provide products or services to customers. To solve this problem, 21st Century Geomatics has developed a spatial scheduling prototype system OptiSchedule. OptiSchedule features:</p>
+          <ul>
+            <li>Integrate attributive constraints and Spatial constraints to optimize Employee scheduling</li>
+            <li>Integrate employee information management, constraints  management into one platform</li>
+            <li>Combines sophisticated optimization heuristics and metaheuristic with very efficient score calculation</li>
+            <li>Integrate Google Mapping to display best route results</li>
+          </ul>
+          <p>If you need demo or more information, please contact mma@21geo.com.<p>
+          <p><a class="btn" href="#">View details &raquo;</a></p>
+        </div><!-- /.span6 -->
+        <div class="span6">
+          <img class="img-circle" src="img/bullet1-5.png">
+          <h3>GIS</h3>
+          <p>21st Century Geomatics has developed the custom on-line Google Mapping Applications RentHelper.ca and NiceSask.ca.</p>
+          <p>21st Century Geomatics developed an initial Google Mapping application for RentHelper approximately 2 years ago. Over the past 2 years, RentHelper and 21st Century Geomatics have continued to enhance the mapping functionality making it one of the most functional Google Mapping applications in the industry.  Users now have the ability to view supplemental layers, query for specific listings matching their criteria, as well as view amenities near a particular listing.</p>
+          <p>21st Century Geomatics is currently working with RentHelper and several other partners in developing mobile mapping applications for the iOs and Blackberry devices.</p>
+          <p>21st Century Geomatics has also developed a custom Google Mapping application for NiceSask.ca.  NiceSask is a web-based mapping information hub of Saskatoon City. It listed public sector, school, restaurant, hospital & clinic, travel center, shopping center, house maintenance etc. to serve local community people.</p>
+          <p><a class="btn" href="#">View details &raquo;</a></p>
+        </div><!-- /.span6 -->
+      </div><!-- /.row -->
+    </div><!-- /.container.product -->
+
+    <hr>
+
+    <div class="container contact-us">
+      <!-- product 3colums -->
+      <h2 id="section-contact-us">Contact Us</h2>
+      <div class="contact-card">
+        <img src="img/logo_v2tiny.png"></img>
+        <div class="address">
+          <div>
+            <span class="glyphicon glyphicon-home"></span>
+            <span>441 Greenbryre Lane, SK S7V 0H8</span>
+          </div>
+          <div>
+            <span class="glyphicon glyphicon-envelope"></span>
+            <span><a href="mailto:mli@21geo.com">mli@21geo.com</a></span>
+          </div>
+          <div>
+            <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+            <span><a href="tel:1-306-261-0583">+1(306)261-0583</a> (10am ~ 4pm, Mon ~ Fri)</span>
+          </div>
+        </div>
+      </div>
+      <p class="lead">Reach us on major social media:
+        <a href="#"><span class="social-media linkedIn"></span></a>
+        <a href="#"><span class="social-media facebook"></span></a>
+        <a href="#"><span class="social-media weixin"></span></a>
+      </p>
+
+      <div class="input-group">
+        <p class="lead direction">or visit our headquarter by</p>
+        <select id="travel-mode">
+          <option value="DRIVING">Driving</option>
+          <option value="WALKING">Walking</option>
+          <option value="BICYCLING">Bicycling</option>
+          <option value="TRANSIT">Transit</option>
+        </select>
+      
+        <button class="btn" id="show-route">Show how</button>
+
+      </div> <!-- end .input-group -->
+
+      <div id="travel-instructions"></div>
+      <!-- <div id="travel-panel">
+        <b>Mode of Travel: </b>
+        <select id="mode">
+          <option value="DRIVING">Driving</option>
+          <option value="WALKING">Walking</option>
+          <option value="BICYCLING">Bicycling</option>
+          <option value="TRANSIT">Transit</option>
+        </select>
+      </div> -->
+      <div id="contact-map"></div>
+    </div>
+    </div> <!-- /END #contents -->
+    <footer>
+      <div class="container-inverse">
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2016 21<sup>st</sup> Century Geomatics Solutions, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <p id="last-update"></p>
+      </div>
+    </footer>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDV5I4vdmmzzk6jW60x8SMYEoyGBToG_BU&callback=initMap" async defer></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+    </script>
+  </body>
+</html>
