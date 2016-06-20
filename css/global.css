@@ -4,6 +4,7 @@
     body {
       color: #5a5a5a;
       background-color: #f0f8ff;
+      min-width: 530px;
     }
 
     header {
@@ -32,11 +33,25 @@
     input[type="text"] {
       margin-bottom: 0px;
     }
+    .navbar .nav>li {
+      line-height: 12px;
+      padding-bottom: 3px;
+    }
+    .navbar .nav>li:hover {
+      padding-bottom: 0px;
+      border-bottom: 3px solid green;
+    }
     #myCarousel {
-      top: 84px; 
+      /*top: 84px; */
     }
     .contents {
-      margin-top: 100px;
+      /*margin-top: 100px;*/
+    }
+    .contents h2 {
+      background-image: url('../img/title-bg5.png');
+      text-shadow: 0px 0px 2px white;
+      background-size: 200px 50px;
+      background-repeat: no-repeat;
     }
     .container.services .img-circle,
     .container.product .img-circle {
@@ -72,15 +87,27 @@
       padding: 10px;
       border-radius: 5px;
       box-shadow: 2px 2px 5px #888;
+      overflow: hidden;
+      height: 137px;
     }
     .container.contact-us .contact-card img {
-      width: 64px;
+      width: 145px;
       float: left;
     }
-
+    .container.contact-us .contact-card .person{
+      margin: 0 0 10px 155px;
+    }
+    .container.contact-us .contact-card .name{
+      font-size: 1.5em;
+      display: block;
+    }
+    .container.contact-us .contact-card .title{
+      font-style: italic;
+      display: block;
+    }
     .container.contact-us .contact-card .address {
       /*display: block;*/
-      margin-left: 74px;
+      margin-left: 155px;
     }
 
     .container.contact-us .lead {
@@ -102,6 +129,33 @@
       font-size: .8em;
     }
 
+    footer .floral {
+      text-align: center;
+    }
+
+    footer .floral img {
+      height: 15px;
+      opacity: .5;
+    }
+    #btn_top a {
+      color: black;
+      text-decoration: none;
+    }
+    #btn_top {
+      display: none;
+      padding 5px;
+      opacity: .5;
+      box-shadow: 2px 2px 3px black;
+      width: 100px;
+      right: 5px;
+      bottom: 5px;
+      position: fixed;
+      z-index: 2;
+    }
+    #btn_top:hover {
+      opacity: 1;
+    }
+
     /* CUSTOMIZE THE NAVBAR
     -------------------------------------------------- */
 
@@ -114,10 +168,14 @@
 
       z-index: 10;
       margin-top: 20px;
-      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+      /*margin-bottom: -90px;*/ /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
     }
     .navbar-wrapper .navbar {
 
+    }
+
+    .navbar {
+      margin-bottom: 10px!important;
     }
 
     /* Remove border and change up box shadow for more contrast */
@@ -146,14 +204,22 @@
       /*margin-top: 10px;*/
     }
 
+    .hr1 {
+      text-align: center;
+      opacity: .3;
+      margin-bottom: 20px;
+    }
 
+    .hr1 img{
+      height: 5px;
+    }
 
     /* CUSTOMIZE THE CAROUSEL
     -------------------------------------------------- */
 
     /* Carousel base class */
     .carousel {
-      margin-bottom: 60px;
+      margin-bottom: 20px;
     }
 
     .carousel .container {
@@ -172,7 +238,7 @@
     }
 
     .carousel .item {
-      height: 500px;
+      height: 400px;
     }
     .carousel img {
       position: absolute;
@@ -185,7 +251,7 @@
     .carousel-caption {
       position: static;
       max-width: 550px;
-      margin-top: 300px;
+      margin-top: 250px;
     }
     .carousel-caption h1,
     .carousel-caption .lead {
@@ -214,7 +280,10 @@
       }
       .header-logo {
         display: inline-block;
-        border-bottom: 1px solid #aaa;
+      }
+
+      .nav-collapse.in.collapse {
+        border-top: 1px dotted #a7a7a7;
       }
     }
 

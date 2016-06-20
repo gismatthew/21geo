@@ -1,6 +1,14 @@
 var map;
 var locations = {};
 
+$(window).scroll(function(){
+  if(window.scrollY > screen.availHeight * 0.5){
+    $('#btn_top').css('display', 'block');
+  }else{
+    $('#btn_top').css('display', 'none');
+  }
+});
+
 $('#last-update').html('Last Update: ' + new Date(document.lastModified).toLocaleDateString());
 
 $('#show-route').click(function(){
@@ -15,7 +23,8 @@ function initMap() {
 
   map = new google.maps.Map(document.getElementById('contact-map'), {
     center: locations.saskatoon,
-    zoom: 11
+    zoom: 11,
+    scrollwheel: false
   });
 
   var com_location = new google.maps.Marker({

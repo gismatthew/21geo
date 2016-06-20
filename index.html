@@ -28,6 +28,7 @@
    <link rel="shortcut icon" href="img/logo_v2tiny.png">
   </head>
   <body>
+    <div id="btn_top" class="btn"><a href="#">Back to top</a></div>
     
     <header>
       <div class="container">
@@ -37,8 +38,8 @@
             <div id="homepage">
               <ul>
                 <li><a href="#" class="active">English</a></li>
-                <li><a href="#">中文</a></li>
-                <li><a href="#">Français</a></li>
+                <li title="抱歉，內容正在建設中...">中文</li>
+                <li title="Nous sommes désolés, ce page est sous construction.">Français</li>
               </ul>
             </div>
             <div class="input-group">
@@ -79,20 +80,35 @@
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<b class="caret"></b></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#section-services">GIS</a></li>
-                    <li><a href="#section-services">RS</a></li>
-                    <li><a href="#section-services">GPS</a></li>
+                    <li>
+                      <a href="#section-services">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        GIS
+                      </a>
+                    </li>
+                    <li><a href="#section-services">
+                      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        RS
+                    </a></li>
+                    <li><a href="#section-services">
+                      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                      GPS</a></li>
                   </ul>
                 </li>
 
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<b class="caret"></b></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#section-products">GIS for scheduling</a></li>
-                    <li><a href="#section-products">21<sup>st</sup>WebGIS</a></li>
+                    <li><a href="#section-products">
+                      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                      GIS for scheduling</a></li>
+                    <li><a href="#section-products">
+                      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                      21<sup>st</sup>WebGIS</a></li>
                   </ul>
                 </li>
                 <li><a href="#section-contact-us">Contact Us</a></li>
+                <li><a href="#section-news">News</a></li>
               </ul>
             </div><!--/.nav-collapse -->
           </div><!-- /.navbar-inner -->
@@ -107,7 +123,7 @@
       <div id="myCarousel" class="carousel slide">
         <div class="carousel-inner">
           <div class="item active">
-            <img src="img/slides/slide-01.png" alt="">
+            <img src="img/slides/slide-01.jpg" alt="">
             <div class="container">
               <div class="carousel-caption">
                 <h1>Saskatoon Service Hub</h1>
@@ -121,7 +137,7 @@
             <div class="container">
               <div class="carousel-caption">
                 <h1>Another example headline.</h1>
-                <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
                 <a class="btn btn-medium btn-info btn-secondary" href="#">Learn more</a>
               </div>
             </div>
@@ -131,7 +147,7 @@
             <div class="container">
               <div class="carousel-caption">
                 <h1>One more for good measure.</h1>
-                <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
                 <a class="btn btn-medium btn-info" href="#">Browse gallery</a>
               </div>
             </div>
@@ -140,129 +156,133 @@
         <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
         <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
       </div><!-- /.carousel -->
+      <div class="hr1"><img src="img/hr.png"></div>
     </div>
     <div class="contents">
-    <div class="container about-us">
-      <h2 id="section-about-us">About Us</h2>
-      <p class="lead">21<sup>st</sup> Century Geomatics (21<sup>st</sup> Geo) has been providing remote sensing data and GIS-customized services to industry clients in western Canada.  21<sup>st</sup> Geo is a privately owned Canadian corporation in business since 2012.  Working primarily with up-to-date satellite imagery, we provide expert advice, appropriate data, and program solutions for terrestrial mapping and monitoring in renewable and non-renewable resource sectors. Utilizing advanced optimization algorithms, we help our users to optimize business resource planning to do more business with less resources.</p>
-    </div>
-    <hr>
-    <div class="container services">
+      <div class="container about-us">
+        <h2 id="section-about-us">About Us</h2>
+        <p class="lead">21<sup>st</sup> Century Geomatics (21<sup>st</sup> Geo) has been providing remote sensing data and GIS-customized services to industry clients in western Canada.  21<sup>st</sup> Geo is a privately owned Canadian corporation in business since 2012.  Working primarily with up-to-date satellite imagery, we provide expert advice, appropriate data, and program solutions for terrestrial mapping and monitoring in renewable and non-renewable resource sectors. Utilizing advanced optimization algorithms, we help our users to optimize business resource planning to do more business with less resources.</p>
+      </div>
+      <hr>
+      <div class="container services">
 
-      <!-- services 3colums -->
-      <h2 id="section-services">Services</h2>
-      <div class="row">
-        <div class="span4">
-          <img class="img-circle" src="img/bullet1-1.png">
-          <h3>GIS Service</h3>
-          <p>21<sup>st</sup> Century Geomatics specializes in creating rich and easy-to-use mapping applications for companies, government agencies, and non-profit organizations of all sizes. 21<sup>st</sup> Century Geomatics delivers software solutions that allow clients to efficiently accomplish tasks with increased precision in their workflow, while at the same time reducing time and cost. Complementing this development expertise, our team has over 20 years’ experience in digital mapping and database management, ensuring an in-depth knowledge of the relevant technical issues that is second to none. Our goal, through custom GIS application development, is to provide our clients with the tools they need to not only improve their business, but also enhance the end-users experience by providing the spatial information necessary to quickly make well-informed decisions. </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-        </div><!-- /.span4 -->
-        <div class="span4">
-          <img class="img-circle" src="img/bullet1-3.png">
-          <h3>RS Service</h3>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-        </div><!-- /.span4 -->
-        <div class="span4">
-          <img class="img-circle" src="img/bullet1-2.png">
-          <h3>GPS Service</h3>
-          <p>The key of any GIS system is the spatial data upon which the display and query operations rely. Acquisition of this data can be completed using a variety of different sources and methodologies. 21st Century Geomatics maintains state-of-the-art GPS data collection equipment capable of sub-meter accuracy survey needs. <img src="img/road-survey.jpg" class="pull-right"></img> We had ArcGIS, QGIS, PCI, AutoCAD software and Geodatabase maintenance expertise allowing us to utilize advance digitizing techniques in essentially any environment using any map data format.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-        </div><!-- /.span4 -->
-      </div><!-- /.row -->
-    </div><!-- /.container.services -->
+        <!-- services 3colums -->
+        <h2 id="section-services">Services</h2>
+        <div class="row">
+          <div class="span4">
+            <img class="img-circle" src="img/bullet1-1.png">
+            <h3>GIS Service</h3>
+            <p>21<sup>st</sup> Century Geomatics specializes in creating rich and easy-to-use mapping applications for companies, government agencies, and non-profit organizations of all sizes. 21<sup>st</sup> Century Geomatics delivers software solutions that allow clients to efficiently accomplish tasks with increased precision in their workflow, while at the same time reducing time and cost.</p>
+            <p><a class="btn" href="services_gis.html">View details &raquo;</a></p>
+          </div><!-- /.span4 -->
+          <div class="span4">
+            <img class="img-circle" src="img/bullet1-3.png">
+            <h3>RS Service</h3>
+            <p>21st Century Geomatics (21st Geo) is an experienced provider of remote sensing and geospatial services. The company specialized in data acquisition and integration, satellite imagery processing and analysis, change detection and features extraction.</p>
+            <p><a class="btn" href="services_rs.html">View details &raquo;</a></p>
+          </div><!-- /.span4 -->
+          <div class="span4">
+            <img class="img-circle" src="img/bullet1-2.png">
+            <h3>GPS Service</h3>
+            <p>The key of any GIS system is the spatial data upon which the display and query operations rely. Acquisition of this data can be completed using a variety of different sources and methodologies. 21st Century Geomatics maintains state-of-the-art GPS data collection equipment capable of sub-meter accuracy survey needs.</p>
+            <p><a class="btn" href="services_gps.html">View details &raquo;</a></p>
+          </div><!-- /.span4 -->
+        </div><!-- /.row -->
+      </div><!-- /.container.services -->
 
-    <hr>
+      <hr>
 
-    <div class="container product">
-      <!-- product 3colums -->
-      <h2 id="section-products">Products</h2>
-      <div class="row">
-        <div class="span6">
-          <img class="img-circle" src="img/bullet1-4.png">
-          <h3>Scheduling</h3>
-          <p>Every organization faces scheduling puzzles: assign a limited set of constrained resources (employees, assets, time and money) to provide products or services to customers. To solve this problem, 21st Century Geomatics has developed a spatial scheduling prototype system OptiSchedule. OptiSchedule features:</p>
-          <ul>
-            <li>Integrate attributive constraints and Spatial constraints to optimize Employee scheduling</li>
-            <li>Integrate employee information management, constraints  management into one platform</li>
-            <li>Combines sophisticated optimization heuristics and metaheuristic with very efficient score calculation</li>
-            <li>Integrate Google Mapping to display best route results</li>
-          </ul>
-          <p>If you need demo or more information, please contact mma@21geo.com.<p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-        </div><!-- /.span6 -->
-        <div class="span6">
-          <img class="img-circle" src="img/bullet1-5.png">
-          <h3>GIS</h3>
-          <p>21st Century Geomatics has developed the custom on-line Google Mapping Applications RentHelper.ca and NiceSask.ca.</p>
-          <p>21st Century Geomatics developed an initial Google Mapping application for RentHelper approximately 2 years ago. Over the past 2 years, RentHelper and 21st Century Geomatics have continued to enhance the mapping functionality making it one of the most functional Google Mapping applications in the industry.  Users now have the ability to view supplemental layers, query for specific listings matching their criteria, as well as view amenities near a particular listing.</p>
-          <p>21st Century Geomatics is currently working with RentHelper and several other partners in developing mobile mapping applications for the iOs and Blackberry devices.</p>
-          <p>21st Century Geomatics has also developed a custom Google Mapping application for NiceSask.ca.  NiceSask is a web-based mapping information hub of Saskatoon City. It listed public sector, school, restaurant, hospital & clinic, travel center, shopping center, house maintenance etc. to serve local community people.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-        </div><!-- /.span6 -->
-      </div><!-- /.row -->
-    </div><!-- /.container.product -->
+      <div class="container product">
+        <!-- product 3colums -->
+        <h2 id="section-products">Products</h2>
+        <div class="row">
+          <div class="span6">
+            <img class="img-circle" src="img/bullet1-4.png">
+            <h3>Scheduling</h3>
+            <p>Every organization faces scheduling puzzles: assign a limited set of constrained resources (employees, assets, time and money) to provide products or services to customers. To solve this problem, 21st Century Geomatics has developed a spatial scheduling prototype system OptiSchedule. OptiSchedule features:</p>
+            <ul>
+              <li>Integrate attributive constraints and Spatial constraints to optimize Employee scheduling</li>
+              <li>Integrate employee information management, constraints  management into one platform</li>
+              <li>Combines sophisticated optimization heuristics and metaheuristic with very efficient score calculation</li>
+              <li>Integrate Google Mapping to display best route results</li>
+            </ul>
+            <p>If you need demo or more information, please contact mma@21geo.com.<p>
+            <p><a class="btn" href="#">View details &raquo;</a></p>
+          </div><!-- /.span6 -->
+          <div class="span6">
+            <img class="img-circle" src="img/bullet1-5.png">
+            <h3>GIS</h3>
+            some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text ...
+            <p><a class="btn" href="#">View details &raquo;</a></p>
+          </div><!-- /.span6 -->
+        </div><!-- /.row -->
+      </div><!-- /.container.product -->
 
-    <hr>
+      <hr>
 
-    <div class="container contact-us">
-      <!-- product 3colums -->
-      <h2 id="section-contact-us">Contact Us</h2>
-      <div class="contact-card">
-        <img src="img/logo_v2tiny.png"></img>
-        <div class="address">
-          <div>
-            <span class="glyphicon glyphicon-home"></span>
-            <span>441 Greenbryre Lane, SK S7V 0H8</span>
+      <div class="container contact-us">
+        <!-- product 3colums -->
+        <h2 id="section-contact-us">Contact Us</h2>
+        <div class="contact-card">
+          <img src="img/logo_v2tiny.png"></img>
+          <div class="person">
+            <span class="name">Matthew Li</span>
+            <span class="title">Senior Software Engineer</span>
           </div>
-          <div>
-            <span class="glyphicon glyphicon-envelope"></span>
-            <span><a href="mailto:mli@21geo.com">mli@21geo.com</a></span>
-          </div>
-          <div>
-            <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
-            <span><a href="tel:1-306-261-0583">+1(306)261-0583</a> (10am ~ 4pm, Mon ~ Fri)</span>
+          <div class="address">
+            <div>
+              <span class="glyphicon glyphicon-home"></span>
+              <span>441 Greenbryre Lane, SK S7V 0H8</span>
+            </div>
+            <div>
+              <span class="glyphicon glyphicon-envelope"></span>
+              <span><a href="mailto:mli@21geo.com">mli@21geo.com</a></span>
+            </div>
+            <div>
+              <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+              <span><a href="tel:1-306-261-0583">+1(306)261-0583</a> (10am ~ 4pm, Mon ~ Fri)</span>
+            </div>
           </div>
         </div>
+        <p class="lead">Reach us on major social media:
+          <a href="#"><span class="social-media linkedIn"></span></a>
+          <a href="#"><span class="social-media facebook"></span></a>
+          <a href="#"><span class="social-media weixin"></span></a>
+        </p>
+
+        <div class="input-group">
+          <p class="lead direction">or visit our headquarter by</p>
+          <select id="travel-mode">
+            <option value="DRIVING">Driving</option>
+            <option value="WALKING">Walking</option>
+            <option value="BICYCLING">Bicycling</option>
+            <option value="TRANSIT">Transit</option>
+          </select>
+        
+          <button class="btn" id="show-route">Show how</button>
+
+        </div> <!-- end .input-group -->
+
+        <div id="travel-instructions"></div>
+        <!-- <div id="travel-panel">
+          <b>Mode of Travel: </b>
+          <select id="mode">
+            <option value="DRIVING">Driving</option>
+            <option value="WALKING">Walking</option>
+            <option value="BICYCLING">Bicycling</option>
+            <option value="TRANSIT">Transit</option>
+          </select>
+        </div> -->
+        <div id="contact-map"></div>
       </div>
-      <p class="lead">Reach us on major social media:
-        <a href="#"><span class="social-media linkedIn"></span></a>
-        <a href="#"><span class="social-media facebook"></span></a>
-        <a href="#"><span class="social-media weixin"></span></a>
-      </p>
 
-      <div class="input-group">
-        <p class="lead direction">or visit our headquarter by</p>
-        <select id="travel-mode">
-          <option value="DRIVING">Driving</option>
-          <option value="WALKING">Walking</option>
-          <option value="BICYCLING">Bicycling</option>
-          <option value="TRANSIT">Transit</option>
-        </select>
-      
-        <button class="btn" id="show-route">Show how</button>
-
-      </div> <!-- end .input-group -->
-
-      <div id="travel-instructions"></div>
-      <!-- <div id="travel-panel">
-        <b>Mode of Travel: </b>
-        <select id="mode">
-          <option value="DRIVING">Driving</option>
-          <option value="WALKING">Walking</option>
-          <option value="BICYCLING">Bicycling</option>
-          <option value="TRANSIT">Transit</option>
-        </select>
-      </div> -->
-      <div id="contact-map"></div>
-    </div>
-    </div> <!-- /END #contents -->
+    </div> <!-- /END .contents -->
     <footer>
       <div class="container-inverse">
         <p class="pull-right"><a href="#">Back to top</a></p>
         <p>&copy; 2016 21<sup>st</sup> Century Geomatics Solutions, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
         <p id="last-update"></p>
+        <div class="floral"><img src="img/hr2_w.png"></div>
       </div>
     </footer>
 
