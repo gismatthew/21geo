@@ -1,0 +1,15 @@
+.infographics img {
+	width: 635px;
+}
+.infographics.service.rs {
+	float: right;
+}
+
+.product.snapshot img {
+	margin: 5px;
+	border-radius: 10px;
+	padding: 5px;
+  background: white;
+  height: 479px;
+	-webkit-filter: drop-shadow(5px 5px 5px #000);
+}
