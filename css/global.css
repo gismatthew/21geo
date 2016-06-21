@@ -98,7 +98,8 @@
       border-radius: 5px;
       box-shadow: 2px 2px 5px #888;
       overflow: hidden;
-      height: 137px;
+      font-size: .9em;
+      /*height: 137px;*/
     }
     .container.contact-us .contact-card img {
       width: 145px;
@@ -347,6 +348,23 @@
         font-size: 18px;
         line-height: 1.5;
       }
+
+      .container.contact-us .contact-card img {
+        width: 45px;
+      }
+
+      .container.contact-us .contact-card .person {
+        margin: 0 0 5px 65px;
+      }
+
+      .container.contact-us .contact-card .address {
+        display: block;
+        margin-left: 0px; 
+        clear: both;
+        border-top: 1px solid #aaa;
+        padding-top: 5px;
+      }
+
 
     }
 
