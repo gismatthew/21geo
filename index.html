@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-    <title>21st Centuray Geomatics Solutions Ltd.</title>
+    <title>21st Century Geomatics Solutions Ltd.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="21st Centuray Geomatics Solutions Ltd.">
     <meta name="author" content="21st Geo">
@@ -12,7 +12,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
     <link href="css/bootstrap-glyphicons.css" rel="stylesheet">
-
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href="css/global.css" rel="stylesheet" media="screen">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -64,7 +64,7 @@
           <div class="navbar-inner">
             <div class = "header-logo">
               <a href="index.html"><img src="img/logo_v3tiny.png" width="32"></img></a>
-              <div style="font-size: 20px; line-height:40px" id="title">21<sup>st</sup> Century Geomatics Solutions Ltd.</div>
+              <div style="font-size: 20px; line-height:40px" class="title">21<sup>st</sup> Century Geomatics Solutions Ltd.</div>
             </div>
             <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
             <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -80,16 +80,16 @@
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<b class="caret"></b></a>
                   <ul class="dropdown-menu">
                     <li>
-                      <a href="#section-services">
+                      <a href="#service-gis">
                         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                         GIS
                       </a>
                     </li>
-                    <li><a href="#section-services">
+                    <li><a href="#service-rs">
                       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                         RS
                     </a></li>
-                    <li><a href="#section-services">
+                    <li><a href="#service-gps">
                       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                       GPS</a></li>
                   </ul>
@@ -98,10 +98,10 @@
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<b class="caret"></b></a>
                   <ul class="dropdown-menu">
-                    <li><a href="index.html#section-products">
+                    <li><a href="#product-gis">
                       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                       21<sup>st</sup>WebGIS</a></li>
-                    <li><a href="index.html#section-products">
+                    <li><a href="#product-scheduling">
                       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                       GIS for scheduling</a></li>
                   </ul>
@@ -171,19 +171,19 @@
         <!-- services 3colums -->
         <h2 id="section-services">Services</h2>
         <div class="row">
-          <div class="span4">
+          <div class="span4" id="service-gis">
             <img class="img-circle" src="img/bullet1-1.png">
             <h3>GIS Service</h3>
             <p>Utilizing our own 21<sup>st</sup> WebGIS Platform, 21<sup>st</sup> Century Geomatics specializes in creating rich and easy-to-use mapping applications for companies, government agencies with increased precision in their workflow, while at the same time reducing time and cost. </p>
             <p><a class="btn" href="services_gis.html">View details &raquo;</a></p>
           </div><!-- /.span4 -->
-          <div class="span4">
+          <div class="span4"  id="service-rs">
             <img class="img-circle" src="img/bullet1-3.png">
             <h3>RS Service</h3>
             <p>21<sup>st</sup> Century Geomatics is an experienced provider of remote sensing and geospatial services. The company specialized in data acquisition and integration, satellite imagery processing and analysis, change detection and features extraction.</p>
             <p><a class="btn" href="services_rs.html">View details &raquo;</a></p>
           </div><!-- /.span4 -->
-          <div class="span4">
+          <div class="span4"  id="service-gps">
             <img class="img-circle" src="img/bullet1-2.png">
             <h3>GPS Service</h3>
             <p>The key of any GIS system is the spatial data upon which the display and query operations rely. 21<sup>st</sup> Century Geomatics maintains state-of-the-art GPS data collection equipment capable of sub-meter accuracy survey to meet users' all needs.</p>
@@ -198,13 +198,13 @@
         <!-- product 3colums -->
         <h2 id="section-products">Products</h2>
         <div class="row">
-          <div class="span6">
+          <div class="span6" id="product-gis">
             <img class="img-circle" src="img/bullet1-5.png">
             <h3>21<sup>st</sup> WebGIS Platform</h3>
             <p>21st-WebGIS is a web based spatial data editing and publishing platform. Utilizing this platform, users can easily share spatial data, remote sensing imagery to the world and allow users edit spatail data online.</p>
             <p><a class="btn" href="product_gis.html">View details &raquo;</a></p>
           </div><!-- /.span6 -->
-          <div class="span6">
+          <div class="span6" id="product-scheduling">
             <img class="img-circle" src="img/bullet1-4.png">
             <h3>GIS for scheduling</h3>
             <p>Every organization faces scheduling puzzles: assign a limited set of constrained resources (employees, assets, time and money) to provide products or services to customers. To solve this problem, 21st Century Geomatics has developed a GIS platform for scheduling.</p>
@@ -216,8 +216,8 @@
     </div> <!-- /END .contents -->
     <footer>
       <div class="container-inverse">
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2016 21<sup>st</sup> Century Geomatics Solutions, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <!-- <p class="pull-right"><a href="#">Back to top</a></p> -->
+        <p>&copy; 2016 21<sup>st</sup> Centuray Geomatics Solutions Ltd.</p>
         <p id="last-update"></p>
         <div class="floral"><img src="img/hr2_w.png"></div>
       </div>
@@ -226,7 +226,6 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDV5I4vdmmzzk6jW60x8SMYEoyGBToG_BU&callback=initMap" async defer></script>
     <script src="js/main.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

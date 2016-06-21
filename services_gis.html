@@ -28,7 +28,8 @@
     <link rel="apple-touch-icon-precomposed" href="img/logo_v3tiny.png">
    <link rel="shortcut icon" href="img/logo_v3tiny.png">
   </head>
-
+  <body>
+    <div id="btn_top" class="btn"><a href="#">Back to top</a></div>
     <header>
       <div class="container">
         <div id="logo" class="pull-left"><a href="index.html"><img src="img/logo_v3tiny.png"></img></a></div>
@@ -63,7 +64,7 @@
           <div class="navbar-inner">
             <div class = "header-logo">
               <a href="index.html"><img src="img/logo_v3tiny.png" width="32"></img></a>
-              <div style="font-size: 20px; line-height:40px" id="title">21<sup>st</sup> Century Geomatics Solutions Ltd.</div>
+              <div style="font-size: 20px; line-height:40px" class="title">21<sup>st</sup> Century Geomatics Solutions Ltd.</div>
             </div>
             <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
             <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -79,16 +80,16 @@
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<b class="caret"></b></a>
                   <ul class="dropdown-menu">
                     <li>
-                      <a href="index.html#section-services">
+                      <a href="index.html#service-gis">
                         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                         GIS
                       </a>
                     </li>
-                    <li><a href="index.html#section-services">
+                    <li><a href="index.html#service-rs">
                       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                         RS
                     </a></li>
-                    <li><a href="index.html#section-services">
+                    <li><a href="index.html#service-gps">
                       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                       GPS</a></li>
                   </ul>
@@ -97,10 +98,10 @@
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<b class="caret"></b></a>
                   <ul class="dropdown-menu">
-                    <li><a href="index.html#section-products">
+                    <li><a href="index.html#product-gis">
                       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                       21<sup>st</sup>WebGIS</a></li>
-                    <li><a href="index.html#section-products">
+                    <li><a href="index.html#product-scheduling">
                       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                       GIS for scheduling</a></li>
                   </ul>
@@ -142,17 +143,17 @@
 
     <footer>
       <div class="container-inverse">
-        <!--<p class="pull-right"><a href="#">Back to top</a></p>-->
-        <p>&copy; 2016 21<sup>st</sup> Century Geomatics Solutions, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <!-- <p class="pull-right"><a href="#">Back to top</a></p> -->
+        <p>&copy; 2016 21<sup>st</sup> Centuray Geomatics Solutions Ltd.</p>
         <p id="last-update"></p>
+        <div class="floral"><img src="img/hr2_w.png"></div>
       </div>
     </footer>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
     <script src="js/bootstrap.min.js"></script>
-    <script>
-      $('#last-update').html('Last Update: ' + new Date(document.lastModified).toLocaleDateString());
-    </script>
+    <script src="js/main.js"></script>
+
   </body>
 </html>
