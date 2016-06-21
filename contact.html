@@ -55,8 +55,8 @@
       </div>
     </header>
     
-    <!-- NAVBAR ================================================== -->
-    <div class="navbar-wrapper" id="nav">
+<!-- NAVBAR ================================================== -->
+    <div class="navbar-wrapper">
       <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
       <div class="container">
         <div class="navbar">
@@ -74,22 +74,21 @@
             <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
             <div class="nav-collapse collapse">
               <ul class="nav">
-                <li class="~active"><a href="index.html#section-about-us">About Us</a></li>
-                <!-- Read about Bootstrap dropdowns at http://twbs.github.com/bootstrap/javascript.html#dropdowns -->
+				<li class="~active"><a href="index.html">Home</a></li>                
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<b class="caret"></b></a>
                   <ul class="dropdown-menu">
                     <li>
-                      <a href="index.html#section-services">
+                      <a href="#section-services">
                         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                         GIS
                       </a>
                     </li>
-                    <li><a href="index.html#section-services">
+                    <li><a href="#section-services">
                       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                         RS
                     </a></li>
-                    <li><a href="index.html#section-services">
+                    <li><a href="#section-services">
                       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                       GPS</a></li>
                   </ul>
@@ -98,16 +97,18 @@
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<b class="caret"></b></a>
                   <ul class="dropdown-menu">
-                    <li><a href="index.html#section-products">
+                    <li><a href="#section-products">
                       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                       GIS for scheduling</a></li>
-                    <li><a href="index.html#section-products">
+                    <li><a href="#section-products">
                       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                       21<sup>st</sup>WebGIS</a></li>
                   </ul>
                 </li>
-                <li><a href="index.html#section-contact-us">Contact Us</a></li>
-                <li><a href="index.html#section-news">News</a></li>
+				<li class="~active"><a href="about.html">About Us</a></li>
+                <!-- Read about Bootstrap dropdowns at http://twbs.github.com/bootstrap/javascript.html#dropdowns -->
+                <li><a href="contact.html">Contact</a></li>
+                <!--<li><a href="#section-news">News</a></li> -->
               </ul>
             </div><!--/.nav-collapse -->
           </div><!-- /.navbar-inner -->
@@ -117,7 +118,7 @@
     </div><!-- /.navbar-wrapper -->
 
               
-            
+     <div class="contents">       
       <div class="container contact-us">
         <!-- product 3colums -->
         <h2 id="section-contact-us">Contact Us</h2>
@@ -172,10 +173,9 @@
           </select>
         </div> -->
         <div id="contact-map"></div>
-      </div>
-            
-        </div> <!-- / container about-us -->
-    </div> <!-- / .contents -->
+      </div>           
+        
+   </div>   <!--contents -->
 
     <footer>
       <div class="container-inverse">
@@ -184,5 +184,10 @@
         <p id="last-update"></p>
       </div>
     </footer>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDV5I4vdmmzzk6jW60x8SMYEoyGBToG_BU&callback=initMap" async defer></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

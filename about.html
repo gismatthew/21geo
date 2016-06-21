@@ -55,8 +55,8 @@
       </div>
     </header>
     
-    <!-- NAVBAR ================================================== -->
-    <div class="navbar-wrapper" id="nav">
+<!-- NAVBAR ================================================== -->
+    <div class="navbar-wrapper">
       <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
       <div class="container">
         <div class="navbar">
@@ -74,22 +74,21 @@
             <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
             <div class="nav-collapse collapse">
               <ul class="nav">
-                <li class="~active"><a href="index.html#section-about-us">About Us</a></li>
-                <!-- Read about Bootstrap dropdowns at http://twbs.github.com/bootstrap/javascript.html#dropdowns -->
+				<li class="~active"><a href="index.html">Home</a></li>                
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<b class="caret"></b></a>
                   <ul class="dropdown-menu">
                     <li>
-                      <a href="index.html#section-services">
+                      <a href="#section-services">
                         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                         GIS
                       </a>
                     </li>
-                    <li><a href="index.html#section-services">
+                    <li><a href="#section-services">
                       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                         RS
                     </a></li>
-                    <li><a href="index.html#section-services">
+                    <li><a href="#section-services">
                       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                       GPS</a></li>
                   </ul>
@@ -98,16 +97,18 @@
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<b class="caret"></b></a>
                   <ul class="dropdown-menu">
-                    <li><a href="index.html#section-products">
+                    <li><a href="#section-products">
                       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                       GIS for scheduling</a></li>
-                    <li><a href="index.html#section-products">
+                    <li><a href="#section-products">
                       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                       21<sup>st</sup>WebGIS</a></li>
                   </ul>
                 </li>
-                <li><a href="index.html#section-contact-us">Contact Us</a></li>
-                <li><a href="index.html#section-news">News</a></li>
+				<li class="~active"><a href="about.html">About Us</a></li>
+                <!-- Read about Bootstrap dropdowns at http://twbs.github.com/bootstrap/javascript.html#dropdowns -->
+                <li><a href="contact.html">Contact</a></li>
+                <!--<li><a href="#section-news">News</a></li> -->
               </ul>
             </div><!--/.nav-collapse -->
           </div><!-- /.navbar-inner -->
@@ -121,17 +122,25 @@
             
             <div class="container about-us">
 				<h2 id="section-about-us">About Us</h2>
-					<p class="lead">21<sup>st</sup> Century Geomatics (21<sup>st</sup> Geo) has been providing remote sensing data and GIS-customized services to industry clients in western Canada.  21<sup>st</sup> Geo is a privately owned Canadian corporation in business since 2012.  Working primarily with up-to-date satellite imagery, we provide expert advice, appropriate data, and program solutions for terrestrial mapping and monitoring in renewable and non-renewable resource sectors. Utilizing advanced optimization algorithms, we help our users to optimize business resource planning to do more business with less resources.</p>
+					<p>21<sup>st</sup> Century Geomatics (21<sup>st</sup> Geo) provides spatial data and customized services to private and public clients in Canada. 21<sup>st</sup> Geo is a privately owned Canadian corporation in business since 2012.    
+					Technology innovation and serving clients with all our hears are our mission.</p> 
+					<p>Our 21<sup>st</sup> WebGIS platfrom can help you develop professional-grade geospatial applications with ease.
+					If you need custom application development in the GIS arena, we have a dedicated professional services team 
+					that can deliver cutting-edge technology on time and on budget.</p> 
+					<p>Working primarily with up-to-date satellite imagery, we provide expert advice, appropriate data, and program solutions for terrestrial mapping and monitoring in renewable and non-renewable resource sectors.</p> 
+					<p>Utilizing GIS for Scheduling platform, we help our users to optimize business resource planning to do more business with less resources.</p>
+									
+					
 			</div>
-			<h3>Saskatoon Information Hub</h3>
-            <div class="product snapshot"><img src="img/products/nicesask.png"></div>
+			
+            <!--<div class="product snapshot"><img src="img/products/nicesask.png"></div>-->
             
         </div> <!-- / container about-us -->
     </div> <!-- / .contents -->
 
     <footer>
       <div class="container-inverse">
-        <p class="pull-right"><a href="#">Back to top</a></p>
+        <!--<p class="pull-right"><a href="#">Back to top</a></p>-->
         <p>&copy; 2016 21<sup>st</sup> Century Geomatics Solutions, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
         <p id="last-update"></p>
       </div>
