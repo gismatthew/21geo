@@ -22,35 +22,35 @@
     <![endif]-->
 
     <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/logo_v2tiny.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/logo_v2tiny.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/logo_v2tiny.png">
-    <link rel="apple-touch-icon-precomposed" href="img/logo_v2tiny.png">
-   <link rel="shortcut icon" href="img/logo_v2tiny.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/logo_v3tiny.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/logo_v3tiny.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/logo_v3tiny.png">
+    <link rel="apple-touch-icon-precomposed" href="img/logo_v3tiny.png">
+   <link rel="shortcut icon" href="img/logo_v3tiny.png">
   </head>
 
     <header>
       <div class="container">
-        <div id="logo" class="pull-left"><img src="img/logo_v2tiny.png"></img></div>
+        <div id="logo" class="pull-left"><a href="index.html"><img src="img/logo_v3tiny.png"></img></a></div>
         <div id="title">21<sup>st</sup> Century Geomatics Solutions Ltd.</div>
         <div id="shortcuts" class="pull-right">
-            <div id="homepage">
-              <ul>
-                <li><a href="#" class="active">English</a></li>
-                <li><a href="#">中文</a></li>
-                <li><a href="#">Français</a></li>
-              </ul>
-            </div>
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="Search for...">
-              <span class="input-group-btn">
-                <button class="btn btn-default btn-small" type="button">Go!</button>
-              </span>
-            </div><!-- /input-group -->
-            <!-- <div id="site-search" class="input-group">
-              <input type="text" placeholder="Search..." class="form-control">
-              <button class="btn btn-secondary">GO</button>
-            </div> -->
+          <div id="homepage">
+            <ul>
+              <li><a href="#" class="active">English</a></li>
+              <li title="抱歉，內容正在建設中...">中文</li>
+              <li title="Nous sommes désolés, ce page est sous construction.">Français</li>
+            </ul>
+          </div>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search for...">
+            <span class="input-group-btn">
+              <button class="btn btn-default btn-small" type="button">Go!</button>
+            </span>
+          </div><!-- /input-group -->
+          <!-- <div id="site-search" class="input-group">
+            <input type="text" placeholder="Search..." class="form-control">
+            <button class="btn btn-secondary">GO</button>
+          </div> -->
         </div>
       </div>
     </header>
@@ -62,7 +62,7 @@
         <div class="navbar">
           <div class="navbar-inner">
             <div class = "header-logo">
-              <img src="img/logo_v2tiny.png" width="32"></img>
+              <a href="index.html"><img src="img/logo_v3tiny.png" width="32"></img></a>
               <div style="font-size: 20px; line-height:40px" id="title">21<sup>st</sup> Century Geomatics Solutions Ltd.</div>
             </div>
             <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
@@ -79,16 +79,16 @@
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<b class="caret"></b></a>
                   <ul class="dropdown-menu">
                     <li>
-                      <a href="#section-services">
+                      <a href="index.html#section-services">
                         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                         GIS
                       </a>
                     </li>
-                    <li><a href="#section-services">
+                    <li><a href="index.html#section-services">
                       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                         RS
                     </a></li>
-                    <li><a href="#section-services">
+                    <li><a href="index.html#section-services">
                       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                       GPS</a></li>
                   </ul>
@@ -97,12 +97,12 @@
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<b class="caret"></b></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#section-products">
-                      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                      GIS for scheduling</a></li>
-                    <li><a href="#section-products">
+                    <li><a href="index.html#section-products">
                       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                       21<sup>st</sup>WebGIS</a></li>
+                    <li><a href="index.html#section-products">
+                      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                      GIS for scheduling</a></li>
                   </ul>
                 </li>
 				<li class="~active"><a href="about.html">About Us</a></li>
@@ -147,5 +147,12 @@
         <p id="last-update"></p>
       </div>
     </footer>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      $('#last-update').html('Last Update: ' + new Date(document.lastModified).toLocaleDateString());
+    </script>
   </body>
 </html>

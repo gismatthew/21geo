@@ -4,12 +4,29 @@
 .infographics.service.rs {
 	float: right;
 }
-
+.service.snapshot, .product.snapshot {
+	display: inline-block;
+}
 .service.snapshot img {
 	margin: 5px;
 	border-radius: 10px;
 	padding: 5px;
   background: white;
   height: 200px;
-	-webkit-filter: drop-shadow(5px 5px 5px #000);
+	-webkit-filter: drop-shadow(2px 2px 3px #000);
+	filter: drop-shadow(2px 2px 3px #000);
+}
+
+.product.snapshot img {
+	margin: 5px;
+	border-radius: 10px;
+	padding: 5px;
+  background: white;
+  height: 300px;
+	-webkit-filter: drop-shadow(2px 2px 3px #000);
+	filter: drop-shadow(2px 2px 3px #000);
+}
+.product.snapshot .caption, .service.snapshot .caption {
+	text-align: center;
+	font-size: .9em;
 }

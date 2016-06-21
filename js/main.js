@@ -49,7 +49,7 @@ function handleNoGeolocation(errorFlag) {
   	err = "Your browser doesn't support geolocation.";
     alert(err);
   }
-  map.setCenter(saskatoon);
+  map.setCenter(locations.saskatoon);
   
   $('#travel-instructions').html(err);
 }
@@ -73,9 +73,10 @@ function getUserLocation(cb){
         new google.maps.Size(32, 32)
       )});
       if(typeof cb == 'function') cb.call();
-    }, function() {
+    }, function(err) {
+      console.log(err);
       handleNoGeolocation(browserSupportFlag);
-    });
+    }, { timeout: 3000 });
   }
   // Browser doesn't support Geolocation
   else {

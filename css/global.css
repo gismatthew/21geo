@@ -35,11 +35,15 @@
     }
     .navbar .nav>li {
       line-height: 12px;
-      padding-bottom: 3px;
+      /*padding-bottom: 3px;*/
+      border-top: 3px solid transparent;
     }
     .navbar .nav>li:hover {
+      border-top: 3px solid #26b126;
+    }
+    .navbar .nav>li.open {
       padding-bottom: 0px;
-      border-bottom: 3px solid green;
+      border-top: 3px solid green;
     }
     #myCarousel {
       /*top: 84px; */
@@ -154,6 +158,13 @@
     }
     #btn_top:hover {
       opacity: 1;
+    }
+
+    .row {
+      text-align: center;
+    }
+    .row p{
+      text-align: left;
     }
 
     /* CUSTOMIZE THE NAVBAR
