@@ -99,7 +99,7 @@
       box-shadow: 2px 2px 5px #888;
       overflow: hidden;
       font-size: .9em;
-      /*height: 137px;*/
+      margin-bottom: 20px;
     }
     .container.contact-us .contact-card img {
       width: 145px;
@@ -127,6 +127,11 @@
 
     .container.contact-us .lead.direction {
       display: inline;
+    }
+
+    .container.about-us img {
+      float: right;
+      height: 200px;
     }
 
     footer {
@@ -364,7 +369,6 @@
         border-top: 1px solid #aaa;
         padding-top: 5px;
       }
-
 
     }
 
