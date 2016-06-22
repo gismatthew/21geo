@@ -13,3 +13,27 @@
   height: 479px;
 	-webkit-filter: drop-shadow(5px 5px 5px #000);
 }
+
+.product.snapshot {
+	display: inline-block;
+}
+
+.product.snapshot .caption {
+	text-align: center;
+	font-size: .9em;
+}
+
+.product.snapshot img {
+	margin: 5px;
+	border-radius: 10px;
+	padding: 5px;
+  background: white;
+  height: 300px;
+	-webkit-filter: drop-shadow(2px 2px 3px #000);
+	filter: drop-shadow(2px 2px 3px #000);
+}
+
+.case-study {
+	font-size: 1.5em;
+	/*border-bottom: 1px solid #aaa;*/
+}

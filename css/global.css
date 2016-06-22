@@ -51,9 +51,37 @@
       padding-bottom: 0px;
       border-top: 3px solid green;
     }
-    #myCarousel {
-      /*top: 84px; */
+    #myCarousel .carousel-inner {
+      border-radius: 10px 40px 10px 40px;
     }
+    #myCarousel .carousel-mask {
+      z-index: 1;
+      opacity: 0.8;
+      height: 400px;
+    }
+    #myCarousel .carousel-caption {
+    background: -webkit-gradient(linear,0 0,100% 0,from(black),to(rgba(0,0,0,0)));
+    background:    -moz-gradient(linear,0 0,100% 0,from(black),to(rgba(0,0,0,0)));
+    background:     -ms-gradient(linear,0 0,100% 0,from(black),to(rgba(0,0,0,0)));
+    background:      -o-gradient(linear,0 0,100% 0,from(black),to(rgba(0,0,0,0)));
+    background:         gradient(linear,0 0,100% 0,from(black),to(rgba(0,0,0,0)));
+    }
+
+    #myCarousel .banner {
+      position: absolute;
+      top: 14px;
+      left: 15px;
+      color: white;
+      z-index: 2;
+      font-size: 2em;
+      font-weight: bold;
+    }
+    #myCarousel .banner .title {
+      font-style: italic;
+      position: relative;
+      top: -4px;
+    }
+
     .contents {
       /*margin-top: 100px;*/
     }
@@ -270,6 +298,7 @@
       left: 0;
       min-width: 100%;
       height: 500px;
+      -webkit-filter: blur(2px) brightness(0.9);
     }
 
     .carousel-caption {
@@ -277,12 +306,18 @@
       max-width: 550px;
       margin-top: 250px;
     }
+    .carousel-caption h1 {
+      font-size: 22px;
+      border-bottom: 2px solid rgba(100,100,100,.8);
+    }
+    .carousel-caption .lead {
+      font-size: 15px;
+    }
     .carousel-caption h1,
     .carousel-caption .lead {
       margin: 0;
       line-height: 1.25;
       color: #fff;
-      text-shadow: 0 1px 1px rgba(0,0,0,.4);
     }
     .carousel-caption .btn {
       margin-top: 10px;

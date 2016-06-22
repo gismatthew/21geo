@@ -4,7 +4,7 @@
 .infographics.service.rs {
 	float: right;
 }
-.service.snapshot, .product.snapshot {
+.service.snapshot {
 	display: inline-block;
 }
 .service.snapshot img {
@@ -26,7 +26,7 @@
 	-webkit-filter: drop-shadow(2px 2px 3px #000);
 	filter: drop-shadow(2px 2px 3px #000);
 }
-.product.snapshot .caption, .service.snapshot .caption {
+.service.snapshot .caption {
 	text-align: center;
 	font-size: .9em;
 }
